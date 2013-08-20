@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <name>dynamixel_pro_arm_description</name>
+  <version>0.8.1</version>
+  <description>The dynamixel_pro_arm_description package contains an URDF model of the dynamixel pro arm</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag --> 
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="baxelrod@willowgarage.com">Brian Axelrod</maintainer>
+  <maintainer email="bholmberg@willowgarage.com">Bob Holmberg</maintainer>
+
+
+  <license>BSD</license>
+
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://ros.org/wiki/dynamixel_pro_arm</url> -->
+
+
+  <author email="baxelrod@willowgarage.com">Brian Axelrod</author>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+
+</package>

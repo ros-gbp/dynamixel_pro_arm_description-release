@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="dynamixel_pro_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<transmission name="transmission1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint1"/>
+    <actuator name="motor1">
+        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+</transmission>
+
+
+
+
+
+
+
+<gazebo>
+    <plugin name="dmx_controller" filename="libdynamixel_pro_controller_gazebo.so">
+      <config>
+        <pkg>
+          dynamixel_pro_arm_description
+        </pkg>
+        <file>
+          config/controller_config.yaml
+        </file>
+       </config>
+    </plugin>
+</gazebo>
+
+
+
+
+</robot>

@@ -1,0 +1,26 @@
+<launch>
+  <arg
+    name="model" />
+  <arg
+    name="gui"
+    default="false" />
+  
+  <param
+    name="robot_description"
+    command="$(find xacro)/xacro.py $(find dynamixel_pro_arm_description)/robots/dynamixel_pro_arm.urdf.xacro" />
+
+  <param
+    name="use_gui"
+    value="$(arg gui)" />
+
+  <node
+    name="robot_state_publisher"
+    pkg="robot_state_publisher"
+    type="state_publisher" />
+  
+  <node
+    name="rviz"
+    pkg="rviz"
+    type="rviz"
+    args="-d $(find dynamixel_pro_arm_description)/urdf.rviz" />
+</launch>
