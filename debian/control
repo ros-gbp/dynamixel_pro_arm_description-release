@@ -1,0 +1,12 @@
+Source: ros-hydro-dynamixel-pro-arm-description
+Section: misc
+Priority: extra
+Maintainer: Brian Axelrod <baxelrod@willowgarage.com>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-urdf, ros-hydro-xacro
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-dynamixel-pro-arm-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-urdf, ros-hydro-xacro
+Description: The dynamixel_pro_arm_description package contains an URDF model of the dynamixel pro arm
